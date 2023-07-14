@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
+/* Weather.css */
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+}
+span
+{
+    color: #f9004d;
 }
 
-.App-link {
-  color: #61dafb;
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.5);
+  z-index: -1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content {
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 4px;
 }
+
+h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
+  margin-right: 10px;
+  width: 200px;
+  box-shadow:2px solid #f4004d;
+}
+
+button[type="submit"] {
+  background-color: #f4004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 6px 22px;
+    border-radius: 30px;
+    transition: .4s;
+}
+button:hover
+{
+  background-color: transparent;
+  border: 2px solid #f4004d;
+  cursor: pointer;
+  color: black;
+}
+.loading {
+  font-style: italic;
+  color: #888;
+}
+
+.weather-card {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 2px 5px rgba(192, 23, 23, 0.1);
+  background-color: #f7f7f7;
+  margin-bottom: 20px;
+}
+
+.weather-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.weather-card p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 28px;
+    margin-bottom: 45px;
+  margin-bottom: 5px;
+}
+
+.weather-card p:last-child {
+  margin-bottom: 0;
+}
+.data
+{
+
+  font-weight: 700;
+  line-height: 3em;
+}
+/* Footer Section  */
